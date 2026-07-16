@@ -8,13 +8,18 @@ Il gesto delle mani non è un semplice controller: rappresenta un organismo flui
 
 ## Struttura del repository
 
-<table>
-  <tr>
-    <td align="center" valign="middle">
-      <img src="hand_tracking_diagram.drawio (1).png" alt="Hardware Schema" width="980">
-    </td>
-  </tr>
-</table>
+```
+.
+├── python/
+│   ├── hands_osc.py       # Script MediaPipe: tracking mani → invio dati via OSC
+│   └── requirements.txt   # Dipendenze Python
+├── touchdesigner/
+│   └── project1.toe       # Progetto TouchDesigner completo
+├── docs/
+│   ├── screenshots/                    # Screenshot del progetto in funzione
+│   └── hand_tracking_diagram.drawio    # Diagramma architetturale (apri su app.diagrams.net)
+└── README.md
+```
 
 ## Come funziona
 
@@ -23,6 +28,10 @@ Il gesto delle mani non è un semplice controller: rappresenta un organismo flui
    - un GLSL TOP che genera due "blob" di plasma organici (uno per mano) che si fondono quando le mani si avvicinano
    - una catena audio (drone continuo + trigger percussivi su apertura/chiusura della mano sinistra, pitch/pan/riverbero pilotati dalla mano destra)
    - un sistema particellare GPU di sfondo, con cui il blob interagisce tramite un effector basato sull'immagine del blob stesso
+
+## Architettura
+
+Il diagramma completo del flusso dati (Webcam → Python/MediaPipe → OSC → TouchDesigner → rami audio e video) è disponibile in [`docs/hand_tracking_diagram.drawio`](docs/hand_tracking_diagram.drawio) — apribile e modificabile su [app.diagrams.net](https://app.diagrams.net) (Open Existing Diagram), oppure visualizzabile direttamente su GitHub cliccando sul file.
 
 ## Setup
 
