@@ -8,17 +8,13 @@ Il gesto delle mani non è un semplice controller: rappresenta un organismo flui
 
 ## Struttura del repository
 
-```
-.
-├── python/
-│   ├── hands_osc.py       # Script MediaPipe: tracking mani → invio dati via OSC
-│   └── requirements.txt   # Dipendenze Python
-├── touchdesigner/
-│   └── project1.toe       # Progetto TouchDesigner completo
-├── docs/
-│   └── screenshots/       # Screenshot del progetto in funzione
-└── README.md
-```
+<table>
+  <tr>
+    <td align="center" valign="middle">
+      <img src="hand_tracking_diagram.drawio (1).png" alt="Hardware Schema" width="980">
+    </td>
+  </tr>
+</table>
 
 ## Come funziona
 
