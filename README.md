@@ -6,19 +6,10 @@ Progetto di interazione gestuale in tempo reale: il tracciamento delle mani (Med
 
 Il gesto delle mani non è un semplice controller: rappresenta un organismo fluido che l'utente "abita" e nutre. Aprendo/chiudendo le mani si modula energia condivisa tra audio (drone, pluck, pitch, pan, riverbero) e video (dimensione e colore del blob, interazione col campo di particelle di sfondo).
 
-## Struttura del repository
+## Struttura Tecnica
 
-```
-.
-├── python/
-│   ├── hands_osc.py       # Script MediaPipe: tracking mani → invio dati via OSC
-│   └── requirements.txt   # Dipendenze Python
-├── touchdesigner/
-│   └── project1.toe       # Progetto TouchDesigner completo
-├── docs/
-│   └── screenshots/       # Screenshot del progetto in funzione
-└── README.md
-```
+<img width="1343" height="639" alt="hand_tracking_diagram drawio (1)" src="https://github.com/user-attachments/assets/9d9e701d-9fd2-48bb-a98e-433db88c2175" />
+
 
 ## Come funziona
 
