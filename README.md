@@ -1,4 +1,4 @@
-# Hand Tracking → TouchDesigner | Blob Sonoro e Visivo Interattivo
+# Hand Tracking | Blob Sonoro e Visivo Interattivo
 
 Progetto di interazione gestuale in tempo reale: il tracciamento delle mani (MediaPipe, via Python) pilota via OSC un sistema audiovisivo generativo in TouchDesigner — un "blob" di plasma che nasce dal gesto pollice-indice di entrambe le mani, con un sistema sonoro reattivo e un campo di particelle di sfondo con cui il blob interagisce.
 
@@ -43,11 +43,18 @@ Lo script apre la finestra della webcam con overlay del tracciamento e inizia a 
 3. Avvia `hands_osc.py` **prima** o in parallelo a TouchDesigner.
 4. Premi Play/Cook nel timeline di TD.
 
-## Controlli / Mapping
+## Controlli / Mapping 
+Per il progetto è stato adoperato un mapping semplice, ma il sistema è in grado di mappare qualsiasi punto della mano, ottenendo un effetto interessante.
 
-- **Distanza pollice-indice (entrambe le mani)**: dimensione del blob
+***AUDIO***
+- **Distanza polso-indice (entrambe le mani)**: ampiezza texture blob
+- **Distanza polso-medio mano sinistra**: ampiezza texture terremoto
+   
+***VIDEO***
+
+- **Distanza pollice-indice (entrambe le mani)**: creazione blob
 - **Distanza tra le due mani**: fusione organica dei due blob
-Per io progetto è stato adoperato un mapping semplice, ma il sistema p in grado di mappare qualsiasi punto della mano.  
+- **Distanza polso-indice mano sinistra**: interazione blob e terremoto particelle
 
 ## Note
 
