@@ -54,13 +54,9 @@ Lo script apre la finestra della webcam con overlay del tracciamento e inizia a 
 
 ## Controlli / Mapping
 
-- **Mano sinistra chiusa**: drone a frequenza grave
-- **Mano sinistra aperta**: ampiezza su due sinusoidi (165 Hz e 1100 Hz)
-- **Apertura mano destra**: trasla il pitch delle sinusoidi
-- **Posizione X mano destra**: pan stereo
-- **Posizione Y mano destra**: quantità di riverbero
 - **Distanza pollice-indice (entrambe le mani)**: dimensione del blob
 - **Distanza tra le due mani**: fusione organica dei due blob
+Per io progetto è stato adoperato un mapping semplice, ma il sistema p in grado di mappare qualsiasi punto della mano.  
 
 ## Note
 
